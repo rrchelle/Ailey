@@ -1,0 +1,336 @@
+@font-face {
+    font-family: "SourceCodePro Regular";
+    src: url(../fonts/Source_Code_Pro/SourceCodePro-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: "Raleway Regular";
+    src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
+
+@font-face
+{
+    font-family: "Raleway Bold";
+    src: url(../fonts/Raleway/Raleway-Bold.ttf);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    /*    background: #222;*/
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0;
+
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#sec1 {
+    width: 100vw;
+    height: 100vh;
+}
+
+.heartcontainer {
+    position: relative;
+    z-index: 1;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+/*    background: hsl(0, 0%, 100%);*/
+    float: left;
+}
+
+.heart {
+
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: none;
+    box-shadow: 0 0 0 0 rgba(232, 76, 61, 0.7);
+    border-radius: 50%;
+    background-color: #e84c3d;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+
+    text-align: center;
+    line-height: 125px;
+}
+
+.heart:hover {
+    -webkit-animation: none;
+    -moz-animation: none;
+    -ms-animation: none;
+    animation: none;
+}
+
+@-webkit-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@-moz-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@-ms-keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+    }
+}
+
+span {
+    font-size: 55pt;
+    color: white;
+    text-shadow: 0px 0px 10px hsla(0, 0%, 100%, 0.4);
+}
+
+/* Section 2 */
+
+#sec2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    padding-top: 50px;
+}
+
+#sec2 .p1 {
+    font-family: "SourceCodePro Regular", sans-serif;
+}
+
+@-webkit-keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes blink-caret {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.p1 {
+    font-family: "SourceCodePro Regular", sans-serif;
+    font-size: 25px;
+    color: white;
+    border-right: .1em solid black;
+    width: 26.5em;
+    width: 9.6ch;
+    margin: 2em 1em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 180px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 1s steps(11, end),
+    blink-caret .5s step-end infinite alternate;
+}
+
+.p1part2
+{
+    font-family: "SourceCodePro Regular", sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+}
+
+/* scroll down */
+
+#section04 a {
+    padding-top: 60px;
+}
+
+#section04 a span {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+}
+
+/* Scroll down for pulsing heart section */
+#section05 a {
+    padding-top: 60px;
+}
+
+#section05 a span {
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #e84c3d;
+    border-bottom: 1px solid #e84c3d;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+    
+    margin-top: -75px;
+}
+
+/* Scroll down for section 5 */
+#section06 a {
+    padding-top: 60px;
+}
+
+#section06 a span {
+    position: absolute;
+    left: 50%;
+    width: 24px;
+    height: 24px;
+    margin-left: -12px;
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb04 2s infinite;
+    animation: sdb04 2s infinite;
+    box-sizing: border-box;
+    
+    margin-top: 60%;
+}
+
+/*  –––––––––––––––––––––––––––––––––––––––––––––  */
+
+
+@-webkit-keyframes sdb04 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+@keyframes sdb04 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+    20% {
+        transform: rotate(-45deg) translate(-10px, 10px);
+    }
+    40% {
+        transform: rotate(-45deg) translate(0, 0);
+    }
+}
+
+.p2
+{
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 10px;
+    text-align: center;
+    color: #e84c3d;
+    transform: translateY(-85px);
+}
+
+#sec3
+{
+    height: 100vh;
+    width: 100vw;
+}
+
+video
+{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+#sec4
+{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(#94bbe9 10%, #22c1c3 100%);
+    margin-bottom: 180px;
+}
+
+#sec4 h1, #sec4 p
+{
+    font-family: "Raleway Regular", sans-serif;
+    text-align: center;
+}
+
+#sec4 h1
+{
+    font-size: 40px;
+    padding-top: 50%;
+}
+
+#sec4 .p3
+{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+#sec5
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+ #sec5 p
+{
+    font-family: "Raleway Regular", sans-serif;
+    text-align: center;
+}
+
+#sec5 .p4
+{
+    margin-top: 15px;
+    font-size: 30px;
+}
+
+del {
+  text-decoration-color: red;
+}
+
+ins {
+  text-decoration: none;
+  font-family: 'Gloss and Bloom', cursive;
+  font-size: 35px;
+  color: red;
+  position:absolute;
+  transform:rotate(-10deg);
+  margin-left: 0px;
+}
